@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Place divs side by side */
+    gap: 20px; /* Add some space between the divs */
+    margin-bottom: 20px;
+}
+
+.incomecal, .expensecal {
+    width: 45%; /* Adjust the width of the divs */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Optional: Add some responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the divs on smaller screens */
+    }
+
+    .incomecal, .expensecal {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

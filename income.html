@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Income Expense Tracker</h1>
+
+    <div class="balance">
+        <h3>Balance</h3>
+        <h3 class="balance-total">0</h3>
+    </div>
+
+    <div class="container">
+        <div class="incomecal">
+            <h3>Income :</h3>
+            <h3 class="income-total">0</h3>
+            <div class="incomehis"></div>
+        </div>
+        <div class="expensecal">
+            <h3>Expense :</h3>
+            <h3 class="expense-total">0</h3>
+            <div class="expensehis"></div>
+        </div>
+    </div>
+
+    <input class="income-note" placeholder="Enter the income note">
+    <input class="income-enter" placeholder="Enter the income" type="number">
+    <button class="income-button" onclick="incomefun()">Add Income</button>
+
+    <br><br>
+
+    <input class="expense-note" placeholder="Enter the expense note">
+    <input class="expense-enter" placeholder="Enter the expense" type="number">
+    <button class="expense-button" onclick="expensefun()">Add Expense</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
